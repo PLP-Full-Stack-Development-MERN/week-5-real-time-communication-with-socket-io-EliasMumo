@@ -1,0 +1,33 @@
+
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { SocketProvider } from "./context/SocketContext";
+import { NoteProvider } from "./context/NoteContext";
+import Notes from "./pages/Notes";
+import NotFound from "./pages/NotFound";
+
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <SocketProvider>
+        <NoteProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Notes />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </NoteProvider>
+      </SocketProvider>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;

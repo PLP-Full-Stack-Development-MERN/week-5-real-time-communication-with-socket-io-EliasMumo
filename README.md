@@ -1,64 +1,69 @@
-**Week 5: Real-Time Communication with Socket.io**
+# Welcome to your Lovable project
 
-**Objective:**
+## Project info
 
-- Develop a real-time web application utilizing Socket.io.
-- Apply concepts of WebSockets, rooms, and namespaces.
-- Understand how to integrate real-time functionality into a full-stack MERN application.
+**URL**: https://lovable.dev/projects/850b8d00-cb91-40eb-91ad-63d49b919a6d
 
-**Project Suggestion:** Build a "Real-Time Collaborative Notes" application that allows multiple users to create, edit, and view notes in real time.
+## How can I edit this code?
 
-**Instructions:**
+There are several ways of editing your application.
 
-1. **Project Setup:**
-   - Create a new project folder named `real-time-notes`.
-   - Set up a backend using Express.js and Socket.io.
-   - Initialize a frontend using React.
+**Use Lovable**
 
-2. **Application Features:**
-   - Users should be able to:
-     - Join a specific "room" to collaborate on a shared note.
-     - See real-time updates when another user edits the note.
-     - Create new notes and edit existing ones.
-     - Receive notifications when a new user joins or leaves a room.
+Simply visit the [Lovable Project](https://lovable.dev/projects/850b8d00-cb91-40eb-91ad-63d49b919a6d) and start prompting.
 
-3. **Backend Requirements:**
-   - Implement WebSocket connections using Socket.io.
-   - Create RESTful endpoints for saving and retrieving notes.
-   - Implement room-based communication for collaborative editing.
+Changes made via Lovable will be committed automatically to this repo.
 
-4. **Frontend Requirements:**
-   - Implement a UI for creating, viewing, and editing notes.
-   - Allow users to join specific rooms via a unique URL or code.
-   - Display a list of online users in each room.
+**Use your preferred IDE**
 
-5. **State Management:**
-   - Use React state and context API to manage application state.
-   - Handle incoming real-time data efficiently to update UI.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-6. **Testing:**
-   - Test real-time functionality by opening multiple browser tabs.
-   - Ensure messages and updates are reflected correctly across all clients.
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-7. **Deployment:**
-   - Deploy the backend to a cloud service such as Render.
-   - Deploy the frontend to Vercel.
-   - Ensure proper environment variable setup for production.
+Follow these steps:
 
-8. **Documentation:**
-   - Write a `README.md` file including:
-     - Project overview.
-     - Steps to install and run the project.
-     - Explanation of key real-time concepts used.
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-9. **Submission:**
-   - Push your project to your GitHub repository.
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-**Evaluation Criteria:**
+# Step 3: Install the necessary dependencies.
+npm i
 
-- Proper implementation of WebSocket communication.
-- Ability to join rooms and collaborate in real-time.
-- Clean UI and responsive design.
-- Structured and well-documented code.
-- Successful deployment and working application link.
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with .
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/850b8d00-cb91-40eb-91ad-63d49b919a6d) and click on Share -> Publish.
+
+## I want to use a custom domain - is that possible?
+
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
